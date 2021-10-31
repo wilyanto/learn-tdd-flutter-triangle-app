@@ -1,5 +1,9 @@
 detectTriangle(num sideA, num sideB, num sideC) {
-  if (sideA < 1) {
-    throw Exception();
+  final sides = [sideA, sideB, sideC];
+
+  for (final side in sides) {
+    if (side < 1) {
+      throw Exception();
+    }
   }
 }
